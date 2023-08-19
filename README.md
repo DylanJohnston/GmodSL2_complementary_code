@@ -12,8 +12,9 @@ By grading considerations we have K^0(G/SL2) = Tor^0 + Tor^2 + Tor^4 + ... and K
 This code computes E_2^{0,0} \otimes F = Tor^0 \otimes F for a given nilpotent u (and thus its associated Phi: SL2 --> G)
 where F is a prime field of characteristic 0 or p>0.
 
-The program will first ask for a group (e.g. A4, B6, D7, G2). It will then calculate and store coefficients and exponents
-of the rankG fundamental characters. (Warning: for rank > 7 this can take a while. This code is likely far from optimised.)
+Upon running the code the user will first be asked for a group (e.g. A4, B6, D7, G2). Coefficients and exponents
+of the rankG fundamental characters will then calculated and stored in list format ready to be used later. 
+(Warning: for rank > 7 this can take a while. This part of the code is likely far from optimised.)
 
 label (R)
 
