@@ -16,11 +16,11 @@ Upon running the code the user will first be asked for a group (e.g. A4, B6, D7,
 of the rankG fundamental characters will then calculated and stored in list format ready to be used later. 
 (Warning: for rank > 7 this can take a while. This part of the code is likely far from optimised.)
 
-****
+->!<-
 
 Then the user is prompted to give a labelling of the Dynkin diagram i.e. state how the simple roots act on the neutral element
 H of sl2 (after mapping along our map phi). Finally the user states the characteristic of the field they want Tor^0 computed over. 
 
 Once the answer is printed the user is asked if they wish to give another labelling of the Dynkin diagram. 'n' is for no and
-will stop the code. Anything else will run the code again for the new labelling, resuming from ****. (Thus, for each group the
+will stop the code. Anything else will run the code again for the new labelling, resuming from ->!<-. (Thus, for each group the
 time consuming set-up only has to be done once).
