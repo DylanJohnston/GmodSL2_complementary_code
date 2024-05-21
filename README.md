@@ -11,7 +11,7 @@ The paper may be found on arxiv: https://arxiv.org/abs/2309.07238.
 
 ## 1. Overview
 
-The paper concerns distinugishing topologial spaces of the form $G/SL_2$, where $G$ is a simply connected simple complex Lie group. Such spaces are obtained as follows:
+The paper concerns distinguishing topological spaces of the form $G/SL_2$, where $G$ is a simply connected simple complex Lie group. Such spaces are obtained as follows:
 
 Let $u$ be a nilpotent element of the lie algebra $\mathfrak{g}$. Then we have an associated map $\phi: \mathfrak{sl}_2(\mathbb{C}) \rightarrow \mathfrak{g}$, and a map of Lie groups $\Phi: SL_2 \rightarrow G$. 
 
@@ -30,7 +30,7 @@ As mentioned above, this code aims to calculate $K^{0,0}(X_u) = \mathbb{Z}[x]/I_
 
 When run, the code asks for a group. This is the $'G'$ and should be input in the form [Upper case letter][Group Rank] e.g. $'A2'$ , $'D7'$, $'F4'$, $'E6'$, etc. 
 
-You will then be prompted to input how the neutral element $H \in \mathfrak{sl}_2(\mathbb{C})$ acts on the simple roots of $\mathfrak{g}$. This is an equivalent way of specifying the nilpotent (and hence the copy of $\mathfrak{sl}_2(\mathbb{C})$ ) of $\mathfrak{g}$. This is in turn equivalent to specifiying which sopy of $SL_2 \subset G$ is being considered. More information on how to go from nilpotent elements to actions of $H \in \mathfrak{sl}_2(\mathbb{C})$ can be found in, for example, Collingwood McGovern - Nilpotent Orbits In Semisimple Lie Algebra.
+You will then be prompted to input how the neutral element $H \in \mathfrak{sl}_2(\mathbb{C})$ acts on the simple roots of $\mathfrak{g}$. This is an equivalent way of specifying the nilpotent (and hence the copy of $\mathfrak{sl}_2(\mathbb{C})$ ) of $\mathfrak{g}$. This is in turn equivalent to specifying which copy of $SL_2 \subset G$ is being considered. More information on how to go from nilpotent elements to actions of $H \in \mathfrak{sl}_2(\mathbb{C})$ can be found in, for example, Collingwood McGovern - Nilpotent Orbits In Semisimple Lie Algebra.
 
 Finally, you will be asked for a characteristic... this is explained now. 
 
@@ -38,12 +38,12 @@ For computational reasons, we do not calculate $\mathbb{Z}[x]/I_u$ but instead $
 
 ### How to use
 
-K-theory-GmodSL2.ipynb is a file format to be used within a Jupyter Notebook. The code was produced here as it was the easiest way to work with SageMath on my windows machine. To use, download the .ipynb file, open it on a Jupyter Notebook with a sagemath kernel. **This was origianlly run using SageMath-9.2**, however I see no reason why other versions would not work out of the box.
+K-theory-GmodSL2.ipynb is a file format to be used within a Jupyter Notebook. The code was produced here as it was the easiest way to work with SageMath on my Windows machine. To use, download the .ipynb file, open it on a Jupyter Notebook with a sagemath kernel. **This was originally run using SageMath-9.2**, however I see no reason why other versions would not work. Note that the LiE package may need to be downloaded and installed as it is not a standard package. 
 
 
 ### A final note
 
-The time-consuming part of the code is retreiving the fundamental characters for the given group $G$ and extracting their coefficients and exponents into a format which can be used later in the code. This part of the code is executed after you state the group $G$ and before you are asked to state how $H \in \mathfrak{sl}_2(\mathbb{C})$ acts on the simple roots. 
+The time-consuming part of the code is retrieving the fundamental characters for the given group $G$ and extracting their coefficients and exponents into a format which can be used later in the code. This part of the code is executed after you state the group $G$ and before you are asked to state how $H \in \mathfrak{sl}_2(\mathbb{C})$ acts on the simple roots. 
 
 Once $\mathbb{F}[x]/(I_u \otimes \mathbb{F})$ is printed you will be asked if you wish to give another list of action of $H \in \mathfrak{sl}_2(\mathbb{C})$ on the simple roots of $G$ i.e. do the calculation again for another copy of $SL_2 \subset G$. 'n' is for no and
 will stop the code, typing anything else (including 'N') will run the code again and prompt you for the new list and characteristic
