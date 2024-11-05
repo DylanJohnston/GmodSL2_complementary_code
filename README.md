@@ -38,7 +38,7 @@ For computational reasons, we do not calculate $\mathbb{Z}[x]/I_u$ but instead $
 
 ### How to use
 
-K-theory-GmodSL2.ipynb is a file format to be used within a Jupyter Notebook. The code was produced here as it was the easiest way to work with SageMath on my Windows machine. To use, download the .ipynb file, open it on a Jupyter Notebook with a sagemath kernel. **This was originally run using SageMath-9.2**, however I see no reason why other versions would not work. Note that the LiE package may need to be downloaded and installed as it is not a standard package. 
+K-theory-GmodSL2.ipynb is a file format to be used within a Jupyter Notebook. The code was produced here as it was the easiest way to work with SageMath on my Windows machine. To use, download the .ipynb file, open it on a Jupyter Notebook with a sagemath kernel. **This was run using SageMath-10.0**, however, I see no reason why other versions would not work. Note that the LiE package may need to be downloaded and installed as it is not a standard package. 
 
 
 ### A final note
